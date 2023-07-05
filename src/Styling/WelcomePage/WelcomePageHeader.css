@@ -1,0 +1,38 @@
+.welcomePageHeaderBanner {
+    position: 'fixed';
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background-color: #0F0B0B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .welcomePageHeaderBanner-header {
+    font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffff;
+  }
+
+  .welcomePageHeaderEmpName{
+    font-family:"SourceSansPro", Helvetica, Arial, sans-serif;
+    font-style:normal;
+    font-size: 16px;
+    color: #ffff;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    /* Additional styling for the dropdown menu */
+  }
+
+  .dropdown-icon {
+    position: relative;
+  }
+  

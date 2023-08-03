@@ -5,6 +5,10 @@ ag-grid-ng2,
 ag-grid-polymer {
     display: block;
 }
+..ag-theme-alphine{
+    display:flex;
+    justify-content: stretch;
+}
 .page-bottom{
     align: right !important;
 }
@@ -77,6 +81,7 @@ ag-grid-polymer {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    /* height: max-content !important; */
 }
 .ag-root-wrapper.ag-layout-normal {
     height: 100%;
@@ -324,6 +329,8 @@ ag-grid-polymer {
     white-space: nowrap;
 }
 .ag-header-cell-resize {
+    display: flex;
+    align-items: center;
     position: absolute;
     z-index: 2;
     height: 100%;
@@ -916,7 +923,7 @@ ag-grid-polymer {
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
-    width: 100%;
+    width: 120px;
     height: 100%;
 }
 .ag-right-aligned-header .ag-cell-label-container {

@@ -12,7 +12,7 @@
 
   .box1 {
     /* background-color: #878ca3; */
-    background-image: url("C:/Company/StaffingTool/newstaffingtool/src/images/Molecule_no_text-05.png");
+    background-image: url("../../images/Molecule_no_text-05.png");
     background-size: cover;
     padding: 20px;
     width: 350px;
@@ -20,7 +20,7 @@
   }
 
   .box2 {
-    background-image: url("C:/Company/StaffingTool/newstaffingtool/src/images/Molecule_no_text-04.png");
+    background-image: url("../../images/Molecule_no_text-04.png");
     background-size: cover;
     padding: 20px;
     width: 350px;
@@ -29,7 +29,7 @@
   }
 
   .box3 {
-    background-image:url("C:/Company/StaffingTool/newstaffingtool/src/images/Molecule_no_text-03.png");
+    background-image:url("../../images/Molecule_no_text-03.png");
     background-size: cover;
     padding: 20px;
     width: 350px;

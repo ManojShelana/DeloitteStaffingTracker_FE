@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <WelcomeHeader />
-      <div style={{ marginTop: "30px" }}>
+      <div style={{ marginTop: "20px" }}>
         {/* Content starts below the fixed header */}
         {children}
       </div>

@@ -1,0 +1,119 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #fff;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 500px;
+    max-height: 500px;
+    background: #f1f1f1;
+    margin: 30px auto 0;
+    word-break: break-all;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+  }
+  
+  .bloc-tabs {
+    display: flex;
+  }
+  .tabs {
+  
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    background: rgba(128, 128, 128, 0.075);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    background-color: #0f0b0b !important;
+    color: #86BC24 !important;
+    font-weight: 600;
+  }
+  .tabs:not(:last-child){
+    border-right: 1px solid white;
+  }
+  
+  .active-tabs  {
+    background-color: white !important;
+    color : '#86BC24' !important;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    background: rgb(88, 147, 241);
+  }
+  
+  
+  
+  button {
+    border: none;
+    
+  }
+  .content-tabs {
+    flex-grow : 1;
+    /* overflow-y : scroll !important; */
+    /* background-color: 'green' !important; */
+  }
+  .content {
+    background: white;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    padding-top : 8px;
+    overflow: scroll !important;
+
+  }
+  .content h2 {
+    padding: 0px 0 5px 0px;
+  }
+  .content hr {
+    width: 100px;
+    height: 2px;
+    background: #222;
+    margin-bottom: 5px;
+  }
+  .content p {
+    width: 100%;
+    height: 100%;
+  }
+  .active-content {
+    display: block;
+    overflow: scroll !important;
+    max-height: 440px;
+  }
+
+  .modal-dialog{
+    padding-top: 300px;
+  }
+  .modalTabs-content {
+    font-size: 14px;
+    position: sizing;
+    top: 20%;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    line-height: 0.5;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    min-height: 400px;
+    min-width: 800px;
+    /* width: max-content; */
+}

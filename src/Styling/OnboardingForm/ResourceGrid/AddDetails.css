@@ -1,40 +1,17 @@
-.custom-modal {
-    min-width: 600px; /* Set your desired width */
-  }
-
-.modal-header{
-    /* display:flexbox; */
-    margin : 0px;
-    max-height: 50px;
-    background-color: #0f0b0b;
-    color:#86BC24;
-    width: 110.5%;
-    margin-left: -5.2%;
-    margin-top: -3%;
-}
-
-.modal-body {
-    margin: 0px 12px;
-    max-height: 350px; /* Adjust the maximum height as needed */
-    overflow-y: auto;
-
-  }
-.modal-footer{
-    margin: 0px;
-}
-
 body.active-modal {
     overflow-y: hidden;
+    box-sizing: content-box;
 }
 
 .btn-modal {
     padding: 10px 20px;
     display: block;
     margin: 100px auto 0;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 .modal, .overlay {
+    font-size: 14px;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -48,54 +25,128 @@ body.active-modal {
     background: rgba(49,49,49,0.8);
 }
 .modal-content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
+    font-size: 14px;
+    position: sizing;
+    top: 20%;
+    left: 50% !important;
     transform: translate(-50%, -50%);
-    line-height: 1.4;
+    line-height: 0.5;
     background: #f1f1f1;
-    padding: 0px 0px;
+    padding: 14px 28px;
     border-radius: 3px;
-    max-width: 600px;
-    min-width: 300px;
+    max-height: 550px;
+    min-width: 800px;
+    /* width: max-content; */
 }
 
 .close-modal {
     position: absolute;
-    color:#f1f1f1;
     top: 10px;
     right: 10px;
-    padding: 5px 5px;
+    padding: 5px 7px;
 }
 
 .modal-dialog-Padding{
-    position: absolute;
+    padding-top: 0px !important;
     position: fixed;
-    padding-top: 20% !important;
-    padding-bottom: 35% !important;
+    display: block !important;
+    overflow-y: clip !important;
     
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-30%, -30%); */
-  overflow: auto;
-
+}
+.modal-header{
+    /* display:flexbox; */
+    margin : 0px;
+    max-height: 44px;
+    background-color: #0f0b0b;
+    color:#86BC24;
+    width: 108% !important;
+    margin-left: -4% !important;
+    margin-top: -4% !important;
+    font-size: 14px !important;
 }
 
-
-
 .add-button{
+    margin-right: 10px;
+    margin-top: 10px;
     font-weight: 700;
     background-color: #86BC24;
-    color: #ffffff;
+    color: #ffffff; 
+    border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    margin-bottom: 5px;
-    
+    margin-bottom: 10px;
+}
+
+/* .content{
+    margin-right: 1 rem;
+    font-weight: 700;
+    background-color: #86BC24;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+} */
+
+.modal-body{
+    overflow-x: hidden;
+    max-height: 550px;
+    overflow-y:hidden !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 20px !important;
+    padding-bottom: 10px !important;
+}
+
+.modal-footer {
+    padding: 0px !important;
+
 }
 
 .btn-close
 {
     background-color: white !important;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .form-control{
+    font-size: 0.9rem !important;
+    line-height: 1 !important;
+  }
+  .valid-text {
+    color: red;
+    margin-top: 7px;
+  }
+  .form-label {
+    font-size: 14px !important;
+    margin-bottom: 0.5rem !important;
+    font-weight: 500;
 }

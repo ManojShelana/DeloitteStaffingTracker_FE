@@ -14,8 +14,8 @@ const WelcomeHeader = () => {
           alt="logo"
           style={{ height: "60px", marginRight: "8px" }}
         />
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-        Staffing Tool
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: 600}}>
+        Staffing Tracker
         </Typography>
         {/* sx={{ flexGrow: 1 }}  */}
         <Box display="flex" alignItems="center">

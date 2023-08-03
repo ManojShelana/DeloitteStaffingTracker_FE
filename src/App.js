@@ -1,21 +1,25 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import WelcomeBanner from "./Component/WelcomePage/WelcomeBanner.js";
 import ResourceGrid from "./Component/OnboardingForm/ResourceGrid/ResourceGrid.js";
 import ConfigureProjectGrid from "./Component/ConfigureProject/ConfigureProjectGrid/ConfigureProjectGrid";
+import Sidebar from "./Component/NavSideBar/MySideNav";
+import OffboardingPage from "./Component/OffboardingPage/OffboardingPage";
 
 function App() {
   return (
-    <div>
-      <Router>
+    <BrowserRouter>
+      <Sidebar>
         <Routes>
         <Route exact path={"/"} element={<WelcomeBanner/>} />
-        <Route path={"/ResourceGrid.js"} element={<ResourceGrid/>} /> 
-        <Route path={"/ConfigureProjectGrid.js"} element={<ConfigureProjectGrid/>} /> 
+        <Route exact path={"/home"} element={<WelcomeBanner/>} />
+        <Route path={"/ResourceGrid"} element={<ResourceGrid/>} /> 
+        <Route path={"/ConfigureProjectGrid"} element={<ConfigureProjectGrid/>} /> 
+        <Route path={"/OffboardingPage"}  element={<OffboardingPage/>}/>
         </Routes>
-    </Router>  
-    </div>
+      </Sidebar>
+    </BrowserRouter> 
   );
-}
+};
 
 export default App;
